@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dude</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <style>
+        body{text-align: center; margin-top: 40px;}
+    </style>
+    <style>
+        .pulsate {
+            -webkit-animation: pulsate 3s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            opacity: 0.5;
+            font-family: 'Bungee', cursive;
+            font-size: 35px;
+            background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+            background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+            color:transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        @-webkit-keyframes pulsate {
+            0% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1.0;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+        .background{
+            background-image: url('image/seigaiha.png');
+        }
+    </style>
+</head>
+<body onload="main()" class="background">
+<p class="pulsate">GAME CREATED BY: </p>
+<p class="pulsate">ANDREW</p>
+<p class="pulsate">KEVIN</p>
+<p class="pulsate">AUSTIN</p>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/sprite.js"></script>
+<script src="js/graphics.js"></script>
+
+</body>
+</html>
